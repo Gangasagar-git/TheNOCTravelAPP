@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="header">
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Verify NOC Application</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"
+		  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+		  crossorigin="anonymous">
+	<link rel="stylesheet"
+		  href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+		  integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+		  crossorigin="anonymous">
+</head>
+<body>
+<div class="container my-5">
+	<h3> Verify NOC Application</h3>
+	<div class="card">
+		<div class="card-body">
+			<div class="col-md-8">
+				<form action="#"
+					  th:action="@{/update/{id}(id=${user.id})}"
+					  th:object="${user}" method="post">
+					<div class="row">
+						<div class="form-group col-md-6">
+							<label for="name" class="col-form-label">Name</label> <input readonly
+																						 type="text" th:field="*{name}" class="form-control" id="name"
+																						 placeholder="Name"> <span
+								th:if="${#fields.hasErrors('name')}" th:errors="*{name}"
+								class="text-danger"></span>
+						</div>
+						<div class="form-group col-md-8">
+							<label for="presentCity" class="col-form-label">Present City</label> <input readonly
+																										type="text" th:field="*{presentCity}" class="form-control" id="presentCity"
+																										placeholder="Present City"> <span
+								th:if="${#fields.hasErrors('presentCity')}" th:errors="*{presentCity}"
+								class="text-danger"></span>
+						</div>
+						<div class="form-group col-md-8">
+							<label for="email" class="col-form-label">Email</label> <input readonly
+																						   type="text" th:field="*{email}" class="form-control" id="email"
+																						   placeholder="Email"> <span
+								th:if="${#fields.hasErrors('email')}" th:errors="*{email}"
+								class="text-danger"></span>
+						</div>
+						<div class="form-group col-md-8">
+							<label for="phoneNo" class="col-form-label">Phone No</label> <input readonly
+																								type="text" th:field="*{phoneNo}" class="form-control"
+																								id="phoneNo" placeholder="phoneNo"> <span
+								th:if="${#fields.hasErrors('phoneNo')}" th:errors="phoneNo"
+								class="text-danger"></span>
+						</div>
+						<div class="form-group col-md-8">
+							<label for="from" class="col-form-label">From Address</label> <input readonly
+																								 type="text" th:field="*{from}" class="form-control" id="from"
+																								 placeholder="From Addess"> <span
+								th:if="${#fields.hasErrors('from')}" th:errors="*{from}"
+								class="text-danger"></span>
+						</div>
+
+						<div class="form-group col-md-8">
+							<label for="to" class="col-form-label">To Address</label> <input readonly
+																							 type="text" th:field="*{to}" class="form-control" id="to"
+																							 placeholder="To Address"> <span
+								th:if="${#fields.hasErrors('to')}" th:errors="*{to}"
+								class="text-danger"></span>
+						</div>
+						<div class="form-group col-md-8">
+							<label for="purpose" class="col-form-label">Purpose</label> <input readonly
+																							   type="text" th:field="*{purpose}" class="form-control" id="purpose"
+																							   placeholder="Purpose Ex: Hospital/Volunteer"> <span
+								th:if="${#fields.hasErrors('purpose')}" th:errors="*{purpose}"
+								class="text-danger"></span>
+						</div>
+						<div class="form-group col-md-8">
+							<label for="vehicleNo" class="col-form-label">Vehicle Number</label> <input readonly
+																										type="text" th:field="*{vehicleNo}" class="form-control" id="vehicleNo"
+																										placeholder="Vehicle Number"> <span
+								th:if="${#fields.hasErrors('vehicleNo')}" th:errors="*{vehicleNo}"
+								class="text-danger"></span>
+						</div>
+
+						<div class="form-group col-md-8">
+							<label for="vehicleNo" class="col-form-label">Created At</label> <input readonly
+																									type="text" th:field="*{vehicleNo}" class="form-control" id="vehicleNo"
+																									placeholder="Vehicle Number"> <span
+								th:if="${#fields.hasErrors('vehicleNo')}" th:errors="*{vehicleNo}"
+								class="text-danger"></span>
+						</div>
+
+
+						<div class="form-group col-md-8">
+							<label for="discription" class="col-form-label">Description: </label>
+
+							<textarea rows=5 th:field="*{discription}" class="form-control" id="discription"
+									  placeholder="Description"></textarea> <span
+								th:if="${#fields.hasErrors('discription')}" th:errors="*{discription}"
+								class="text-danger"></span>
+						</div>
+
+						<div class="form-group col-md-8">
+							<input type="submit" class="btn btn-primary" name="status"
+								   value="approved">
+							<input type="submit" class="btn btn-danger" name="status"
+								   value="rejected">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

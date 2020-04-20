@@ -1,0 +1,33 @@
+
+]squid:S1192F"FDefine a constant instead of duplicating this literal "users" 5 times.(…áñÚ
+bsquid:S1192G"FDefine a constant instead of duplicating this literal "index" 3 times.(¦œû×ÿÿÿÿÿ
+fsquid:S3973†"IUse indentation to denote the code conditionally executed by this "else".(„¶áìøÿÿÿÿ
+isquid:S001171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ı·É¯
+bsquid:UselessImportCheck"9Remove this unused import 'java.io.ByteArrayInputStream'.(Ëôæ±ûÿÿÿÿ
+usquid:UselessImportCheck"LRemove this unused import 'org.springframework.core.io.InputStreamResource'.(¡±ù”ıÿÿÿÿ
+isquid:UselessImportCheck%"ERemove this unused import 'com.cognizant.noc.util.GeneratePdfReport'.(âÒŸ²
+jsquid:UselessImportCheck"ARemove this unused import 'org.springframework.http.HttpHeaders'.(ãŸñ×úÿÿÿÿ
+hsquid:UselessImportCheck"?Remove this unused import 'org.springframework.http.MediaType'.(úŸİ¯şÿÿÿÿ
+rsquid:UselessImportCheck"IRemove this unused import 'org.springframework.web.servlet.ModelAndView'.(Ç¨ÿäûÿÿÿÿ
+msquid:UselessImportCheck"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ
+@squid:S1148Ÿ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+psquid:S3008."ZRename this field "UPLOADED_FOLDER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ÿ£E
+Tsquid:S3752ª">Add a "method" parameter to this "@RequestMapping" annotation.(“ÿ
+
+psquid:S00116,"XRename this field "NOCRepository" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆÔÒØ
+\squid:S46846"@Replace this persistent entity with a simple POJO or DTO object.(¨·‘ãûÿÿÿÿ
+Wsquid:S4684;"@Replace this persistent entity with a simple POJO or DTO object.(„…ú
+\squid:S4684P"@Replace this persistent entity with a simple POJO or DTO object.(›áêƒüÿÿÿÿ
+Wsquid:S4684f"@Replace this persistent entity with a simple POJO or DTO object.(ÆŸŞ¯
+]squid:S4684ƒ"@Replace this persistent entity with a simple POJO or DTO object.(Š”ışÿÿÿÿ
+gsquid:S4488±"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ë¹ş¹úÿÿÿÿ
+gsquid:S00100¼"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ş”İ
+Xsquid:S4684¼"@Replace this persistent entity with a simple POJO or DTO object.(ş”İ
+Wsquid:S1854Á":Remove this useless assignment to local variable "users2".(è˜·Üÿÿÿÿÿ
+P
+squid:S106¾"9Replace this use of System.out or System.err by a logger.(¢†Õñ
+Dsquid:S1905À"'Remove this unnecessary cast to "List".(ñÍà•ùÿÿÿÿ
+P
+squid:S106Ï"9Replace this use of System.out or System.err by a logger.(á’¨â
+Dsquid:S1905Ñ"'Remove this unnecessary cast to "List".(ñšÿôÿÿÿÿÿ
+Hsquid:S1481Á"+Remove this unused "users2" local variable.(è˜·Üÿÿÿÿÿ
